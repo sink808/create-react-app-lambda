@@ -1,0 +1,4 @@
+export const ADD_TODOITEM = "ADD_TODOITEM"
+export const DELETE_TODOITEM = "DELETE_TODOITEM"
+export const CHANGE_ACTIVE = 'CHANGE_ACTIVE'
+export const MOVE_DOWN = 'MOVE_DOWN'

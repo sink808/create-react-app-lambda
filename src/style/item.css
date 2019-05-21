@@ -1,0 +1,21 @@
+.addItemBtn{
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+  width: 140px;
+}
+
+.addItemInput{
+  padding: 0;
+  border: 1px;
+  width: calc(100% - 154px);
+}
+
+.todoListItemText{
+  overflow: hidden;
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
