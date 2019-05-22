@@ -4,7 +4,7 @@ import {ADD_TODOITEM, DELETE_TODOITEM, CHANGE_ACTIVE, MOVE_DOWN} from "../consta
 const todoListReducer = (state = todoData, action) =>{
     switch(action.type){
         case ADD_TODOITEM:{
-            const maxId = Math.max(...state.map(p => p.id))
+            const maxId = (state.length !== 0) ? Math.max(...state.map(p => p.id)) : 0
             const newState = [...state, {id: maxId + 1, name: action.todoName, active: true}]
             return newState
         }

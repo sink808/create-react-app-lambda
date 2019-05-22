@@ -14,7 +14,7 @@ class AddTodo extends React.Component {
 
     addItem = () => {
         this.props.addTodoItem(this.state.addTodoName)
-        this.props.moveDown(document.getElementById('isMoveDown').value);
+        this.props.moveDown(JSON.parse(document.getElementById('isMoveDown').value));
         this.setState({
             addTodoName: ''
         });
